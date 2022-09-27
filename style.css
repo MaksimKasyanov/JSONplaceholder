@@ -1,0 +1,111 @@
+html {
+   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after { box-sizing:border-box; }
+
+ul[class],
+ol[class] {
+   padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+   margin: 0;
+	padding: 0;
+   font-size: inherit;
+}
+
+ul[class] {
+   list-style: none;
+}
+
+img {
+   max-width: 100%;
+   display: block;
+}
+
+input,
+button,
+textarea,
+select {
+   font: inherit;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	background: none;
+	padding: 0;
+}
+button{
+	-webkit-tap-highlight-color: transparent;
+}
+a,
+li {
+	color: #000;
+	text-decoration: none;
+	list-style: none;
+}
+body{
+	background-color: #181818;
+	color: #fff;
+}
+.json-title{
+	width: 290px;
+	margin: 100px auto 40px;
+}
+.json-link{
+	position: relative;
+	color: #fff;
+	font-size: 32px;
+	display: block;
+	text-align: center;
+}
+.json-link::after{
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+}
+.container{
+	margin: 0 auto;
+	padding: 0 20px;
+	max-width: 1280px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.user{
+	position: relative;
+	width: 300px;
+	height: 400px;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.084);
+	margin: 20px;
+}
+.user__id{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+.user__name{
+	font-size: 18px;
+}
